@@ -1,0 +1,66 @@
+body {
+    background-color: #eeeeee;
+}
+
+#app {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 920px;
+}
+
+.whiteboard {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border: 1px solid #f0f0f0;
+    border-radius: 1rem;
+    margin: .5rem 1rem;
+    height: 50vh;
+    width: 100%;
+}
+
+.draw {
+    position: absolute;
+    z-index: 1;
+    border-radius: 1rem;
+    height: 100%;
+    width: 100%;
+}
+
+.clear {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    bottom: .5rem;
+    right: .5rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: #bbb;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.eraser {
+    position: absolute;
+    z-index: 2;
+    border-radius: 50%;
+    bottom: .5rem;
+    right: 3rem;
+    height: 2rem;
+    width: 2rem;
+    background-color: #ccc;
+    opacity: .5;
+    cursor: pointer;
+}
+
+.eraser.active {
+    background-color: #f94144;
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="mobile-web-app-capable" content="yes">
+    <link rel="stylesheet" href="./index.css">
+    <title>手書きテスト</title>
+</head>
+
+<body>
+    <div id="app">
+        <p>手書きテスト</p>
+        <div class="whiteboard">
+            <canvas class="draw" ontouchmove="event.preventDefault()"></canvas>
+            <div class="clear"></div>
+            <div class="eraser"></div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./index.js"></script>
+</body>
+
+</html>
