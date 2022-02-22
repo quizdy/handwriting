@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <meta name="mobile-web-app-capable" content="yes">
+    <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico">
     <link rel="stylesheet" href="./index.css">
     <title>手書きテスト</title>
 </head>
@@ -17,9 +18,14 @@
             <div class="clear"></div>
             <div class="eraser"></div>
         </div>
+        <div class="reciever">
+            <canvas class="draw"></canvas>
+        </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="./index.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="./io.js"></script>
+    <script src="./draw.js"></script>
 </body>
 
 </html>
